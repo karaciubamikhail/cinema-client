@@ -1,0 +1,50 @@
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+
+.info .info_description {
+  padding-right: 1.5rem;
+}
+
+.info .info_title,
+.info .info_hall {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.info .info_start {
+  font-size: 1.4rem;
+  font-weight: 300;
+  margin: 0.7rem 0;
+}
+
+.info .info_hint {
+  position: relative;
+  font-weight: 300;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.info .info_hint p {
+  position: relative;
+  width: 10rem;
+}
+
+.info .info_hint p::before {
+  content: '';
+  position: absolute;
+  left: -1rem;
+  top: calc(50% - 1.6rem);
+  display: block;
+  width: 2.4rem;
+  height: 3.2rem;
+  background-image: url(../../img/hint.png);
+  background-size: 2.4rem 3.2rem;
+}
+
+.info_hint {
+  display: none;
+}

@@ -1,0 +1,50 @@
+.day_week::after {
+  content: ',';
+}
+
+.day_number::before {
+  content: ' ';
+}
+
+.day_week,
+.day_number {
+  display: block;
+}
+
+[class*=MenuWeekly] [class*=MenuWeekly].day_chosen {
+  flex-grow: 1;
+  background-color: #FFFFFF;
+  font-weight: 700;
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+}
+
+/* 
+У родителя MenuWeekly специфичность .nav .nav__day выше,
+чем .day_weekend здесь, поэтому цвет не меняется, поэтому
+ повышаем специфичность через [class*=MenuWeekly]
+*/
+[class*=MenuWeekly] [class*=MenuWeekly].day_weekend {
+  color: #DE2121;
+}
+
+.day_next {
+  text-align: center;
+}
+
+.day_next::before {
+  content: '>';
+  font-family: monospace;
+  font-weight: 700;
+  font-size: 2.4rem;
+}
+
+.day_today .day_week::before {
+  content: 'Сегодня';
+  display: block;
+}
+
+.day_today .day_week,
+.day_today .day_number {
+  display: inline;
+}

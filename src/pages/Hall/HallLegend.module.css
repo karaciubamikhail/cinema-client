@@ -1,0 +1,68 @@
+.legend {
+  padding-top: 3rem;
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: #FFFFFF;
+  display: flex;
+  flex-wrap: nowrap;
+  text-align: left;
+}
+
+.legend .col {
+  max-width: 25rem;
+}
+
+.legend .col:first-of-type {
+  padding-right: 1.5rem;
+  margin-left: auto;
+}
+
+.legend .col:last-of-type {
+  margin-right: auto;
+}
+
+.legend .legend_price+.legend_price {
+  margin-top: 1rem;
+}
+
+.legend_price>span {
+  margin-right: 0.5rem;
+}
+
+/*my*/
+
+.scheme__chair {
+  display: inline-block;
+  vertical-align: middle;
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid #525252;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.scheme__chair:not(:first-of-type) {
+  margin-left: 4px;
+}
+
+.scheme__chair_disabled {
+  opacity: 0;
+}
+
+.scheme__chair_standart {
+  background-color: #FFFFFF;
+}
+
+.scheme__chair_taken {
+  background-color: transparent;
+}
+
+.scheme__chair_vip {
+  background-color: #F9953A;
+}
+
+.scheme__chair_selected {
+  background-color: #25C4CE;
+  box-shadow: 0px 0px 4px #16A6AF;
+  transform: scale(1.2);
+}

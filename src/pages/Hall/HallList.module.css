@@ -1,0 +1,61 @@
+.hall {
+  background-color: rgba(241, 235, 230, 0.95);
+  padding-bottom: 3rem;
+  border-radius: 2px;
+}
+
+.accepting_button {
+  display: block;
+  margin: 3rem auto 0;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.24), 0px 0px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 3px;
+  border: none;
+  padding: 12px 57px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.4rem;
+  background-color: #16A6AF;
+  color: #FFFFFF;
+}
+
+/*my*/
+.accepting_button_disabled {
+  background-color: #a4acac;
+  color: #ffffff82;
+}
+
+.scheme {
+  text-align: center;
+  background-color: #171D24;
+  padding: 1.5rem 3rem 1.5rem;
+}
+
+.scheme__wrapper {
+  min-width: 50%;
+  /*изначально не было,
+   но иначе, если зал маленький, 
+   то надпись "экран" слишком маленькая */
+  font-size: 0;
+  display: inline-block;
+  background-image: url(../../img/screen.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-top: 3rem;
+}
+
+.scheme__wrapper::before {
+  content: '';
+}
+
+.paragraph {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #000000;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.paragraph.error {
+  color: #800000;
+}

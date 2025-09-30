@@ -1,0 +1,49 @@
+[class*=MainFilms] .info {
+  display: flex;
+}
+
+[class*=MainFilms] .poster {
+  position: relative;
+  width: 12.5rem;
+  height: 17.5rem;
+}
+
+[class*=MainFilms] .poster .poster_image {
+  position: relative;
+  top: -3rem;
+  width: 12.5rem;
+  height: 17.5rem;
+}
+
+[class*=MainFilms] .poster::after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: -0.7rem;
+  top: -3rem;
+  border: 1.5rem solid transparent;
+  border-bottom: 0 solid transparent;
+  border-right: 0 solid transparent;
+  border-left: 0.7rem solid #772720;
+}
+
+[class*=MainFilms] .text {
+  flex-grow: 1;
+  padding-left: 1.5rem;
+}
+
+[class*=MainFilms] .title {
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+[class*=MainFilms] .description {
+  font-size: 1.4rem;
+  margin-top: 1rem;
+}
+
+[class*=MainFilms] .data {
+  font-size: 1.4rem;
+  font-weight: 300;
+  margin-top: 1rem;
+}
