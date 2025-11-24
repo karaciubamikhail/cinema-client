@@ -11,8 +11,7 @@
   display: block;
 }
 
-[class*=MenuWeekly] [class*=MenuWeekly].day_chosen {
-  flex-grow: 1;
+.day_chosen {
   background-color: #FFFFFF;
   font-weight: 700;
   transform: scale(1.1);

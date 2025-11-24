@@ -35,10 +35,11 @@ export default function MenuItemNavLink({ className, route, item, ...props }) {
   return (
     <NavLink
       to={`/${route || ''}`}
+      end
       className={({ isActive }) =>
         isActive ? classNameDayChosenString : classNameDayString
-      }
-    >
+        }
+      >
       <span className={styles.day_week}>{dayName}</span>
       <span className={styles.day_number}>{dayNumber}</span>
     </NavLink>
